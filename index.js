@@ -5,8 +5,14 @@ function findMatching (list, name) {
  }
 
  function fuzzyMatch (list, name) {
-   let namelength = name.length 
+   let namelength = name.length
    return list.filter(function(driverName) {
      return driverName.slice(0,namelength) === name;
    })
  }
+
+function matchName (list, name) {
+  return list.filter(function(driver){
+     return driver.name.toLowerCase() === name.toLowerCase()
+   })
+}
