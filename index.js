@@ -1,5 +1,5 @@
-function findMatching(collection) {
-  for (const user of collection) {
-    console.log(user.drivers);
+function findMatching(drivers) {
+  for (const user of drivers) {
+    console.log(user.name);
   }
 }
