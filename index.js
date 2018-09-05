@@ -1,5 +1,1 @@
-function findMatching(drivers) {
-  for (const user of drivers) {
-    console.log(user.name);
-  }
-}
+const result = drivers.filter(drivers => driver.name);
